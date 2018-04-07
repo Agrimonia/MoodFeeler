@@ -1,15 +1,23 @@
 # MoodFeeler
 
----
+## 运行环境
 
-* test_model.h5将放置在model目录下
+Python 3.6.3
 
----
+依赖在 requirements.txt 文件里
 
-### 示例 
+```bash
+pip install -r requirements.txt # 安装依赖
+```
+
+* 将test_model.h5放置在model目录下
+
+
+## 运行示例 
 ```
 >>> import MoodFeeler as mf
 >>> mf.predict(['你这么努力，忍受那么多寂寞和纠结，我们也没觉得你有多优秀。', '微笑拥抱每一天，做像向日葵般温暖的女子'])
+
 array([[0.30009958, 0.6999004 ],
        [0.8481712 , 0.15182886]], dtype=float32)
 ```
